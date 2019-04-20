@@ -1,33 +1,28 @@
-.App {
-  text-align: center;
+.stage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100%;
+  font-family: "Share Tech Mono", monospace;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.stage--block__black {
+  background-color: #1b1b1b;
+  text-align: right;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stage--block__white {
+  color: #1b1b1b;
 }
 
-.App-link {
-  color: #61dafb;
+.stage--block {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero__black {
+  text-shadow: -1px -1px 0 #666;
+}
+
+.hero__white {
+  text-shadow: 1px 1px 0 #c3c3c3;
 }
